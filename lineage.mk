@@ -14,10 +14,10 @@
 # limitations under the License.
 
 # Inherit some common CarbonROM stuff.
-$(call inherit-product, vendor/carbon/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit CarbonROM GSM telephony parts
-$(call inherit-product, vendor/carbon/config/gsm.mk)
+$(call inherit-product, vendor/lineage/config/gsm.mk)
 
 $(call inherit-product, device/motorola/athene/full_athene.mk)
 
@@ -28,7 +28,7 @@ TARGET_BOOTANIMATION_HALF_RES := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := athene
-PRODUCT_NAME := carbon_athene
+PRODUCT_NAME := lineage_athene
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := athene
